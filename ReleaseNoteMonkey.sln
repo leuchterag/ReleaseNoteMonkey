@@ -6,6 +6,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F497B3A-AD0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LAG.Tools.ReleaseNoteMonkey", "src\LAG.Tools.ReleaseNoteMonkey\LAG.Tools.ReleaseNoteMonkey.csproj", "{169BD65F-89C1-4844-965B-4E06E85F7992}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9400378-43A1-4707-B18A-95C9B16F12BC}"
+	ProjectSection(SolutionItems) = preProject
+		version.props = version.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

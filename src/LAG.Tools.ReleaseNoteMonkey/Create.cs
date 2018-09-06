@@ -1,9 +1,7 @@
 ﻿using HandlebarsDotNet;
 using LibGit2Sharp;
 using McMaster.Extensions.CommandLineUtils;
-using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -131,13 +129,13 @@ namespace LAG.Tools.ReleaseNoteMonkey
                 var data = new
                 {
                     versions = versionHistory
-                            .Select(x =>
-                            new
-                            {
-                                Version = x.Key,
-                                Notes = x.Value
-                                    .Select(y => new { Commit = y.Commit, Data = y.Values}).ToArray()
-                            }).ToArray()
+                        .Select(x =>
+                        new
+                        {
+                            Version = x.Key,
+                            Notes = x.Value
+                                .Select(y => new { Commit = y.Commit, Data = y.Values}).ToArray()
+                        }).ToArray()
                 };
 
                 var result = template(data);
