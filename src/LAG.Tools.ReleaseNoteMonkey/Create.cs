@@ -153,39 +153,6 @@ namespace LAG.Tools.ReleaseNoteMonkey
                 }
 
                 await File.WriteAllTextAsync(outputPath, result, Encoding.UTF8);
-
-                //object from = null;
-                //if (!string.IsNullOrEmpty(From))
-                //{
-                //    from = repo.Branches.FirstOrDefault(x => x.FriendlyName.Equals(From, StringComparison.InvariantCulture));
-
-                //    if(from == null)
-                //    {
-                //        from = repo.Tags.FirstOrDefault(x => x.FriendlyName.Equals(From, StringComparison.InvariantCulture));
-                //    }
-                //}
-
-                //var to = repo.Branches.First(x => x.FriendlyName == "master").Commits.First();
-                //if (!string.IsNullOrEmpty(To))
-                //{
-                //    from = repo.Branches.FirstOrDefault(x => x.FriendlyName.Equals(To, StringComparison.InvariantCulture));
-
-                //    if (from == null)
-                //    {
-                //        from = repo.Tags.FirstOrDefault(x => x.FriendlyName.Equals(To, StringComparison.InvariantCulture));
-                //    }
-                //}
-
-                //var filter = new CommitFilter
-                //{
-                //    ExcludeReachableFrom = from,       // formerly "Since"
-                //    IncludeReachableFrom = to,  // formerly "Until"
-                //};
-
-                //foreach (Commit c in repo.Commits.QueryBy(filter))
-                //{
-                //    console.Out.WriteLine($"{c.Id} : {c.Message}");
-                //}
             }
 
             return 0;
