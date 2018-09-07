@@ -110,7 +110,7 @@ namespace LAG.Tools.ReleaseNoteMonkey
                 string templatePath;
                 if (Path.IsPathRooted(TemplatePath))
                 {
-                    templatePath = Repository;
+                    templatePath = TemplatePath;
                 }
                 else
                 {
